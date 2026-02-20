@@ -1,5 +1,28 @@
 # Real-Time SSE Notification System
 
+A lightweight, scalable real-time notification system built using Server-Sent Events (SSE) and Node.js.
+
+## Tech Stack
+- **Backend:** Node.js, Express
+- **Real-time:** Server-Sent Events (SSE)
+- **Database:** PostgreSQL (with event persistence)
+- **Containerization:** Docker, Docker Compose
+
+## Project Structure
+```text
+.
+├── src/
+│   ├── routes/      # API endpoints
+│   ├── services/    # Business logic (SSE Manager)
+│   ├── utils/       # Utility functions (Logger)
+│   └── db.js        # Database connection
+├── seeds/           # SQL scripts for DB initialization
+├── Dockerfile       # Application container config
+├── docker-compose.yml # Service orchestration
+└── submission.json  # Evaluation config
+```
+
+
 A highly reliable, production-grade Server-Sent Events (SSE) notification system built with Node.js, PostgreSQL, and Docker. This system features event persistence, real-time streaming, heartbeats, and a robust event replay mechanism for handling disconnections.
 
 ## 🚀 Overview

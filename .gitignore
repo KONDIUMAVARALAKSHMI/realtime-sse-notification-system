@@ -1,5 +1,15 @@
 node_modules
 .env
+.env.local
+.DS_Store
+.vscode/
+.idea/
+dist/
+
+.DS_Store
+.vscode/
+.idea/
+
 db-data
 gas-report.txt
 *.log

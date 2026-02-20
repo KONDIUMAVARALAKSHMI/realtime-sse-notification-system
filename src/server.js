@@ -16,8 +16,13 @@ app.use((req, res, next) => {
 
 // Healthcheck endpoint
 app.get('/health', (req, res) => {
-    res.status(200).json({ status: 'OK', timestamp: new Date().toISOString() });
+    res.status(200).json({
+        status: 'OK',
+        message: 'Real-time SSE Notification Server is healthy',
+        timestamp: new Date().toISOString()
+    });
 });
+
 
 // Routes
 app.use('/api/events', eventRoutes);

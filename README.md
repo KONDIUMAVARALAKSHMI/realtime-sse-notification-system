@@ -68,6 +68,14 @@ graph LR
    ```
 3. The API will be accessible at `http://localhost:8080`.
 
+## ⚙️ Configuration
+
+The application uses environment variables for configuration. See `.env.example` for the required variables:
+
+- `DATABASE_URL`: Connection string for PostgreSQL.
+- `PORT`: The port the server will listen on (default 8080).
+
+
 ## 🧪 Verification & Testing
 
 ### 1. Subscribe to a Channel
